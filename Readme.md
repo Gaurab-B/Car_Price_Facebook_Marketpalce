@@ -14,7 +14,8 @@ CSV file will be saved as required.
 
 
 
-(old)
+(old)  
+
 Run the remove symbool.ipynb entirely, which will clean the '.  
 
 Run HTML_TO_CSV to get the csv output from the file.  
