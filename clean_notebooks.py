@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-path = "Datasets//2024-07-10-Cincinnati-Ohio.csv"
+path = "Datasets//2024-07-10-Chichago.csv"
 df = pd.read_csv(path)
 df = df.dropna(subset=['Model'])
 filtered_df = df[df['Model'].str.contains('Honda|Toyota|Mazda', case=False)]
