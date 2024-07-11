@@ -5,18 +5,21 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 locationa = input("Which location are you scraping cars for?")
-def removal(path):   #to remove any ' from the string so that it doesnot stop
-    with open(path, 'r') as file:
+
+def removal(path):
+    with open(path, 'r', encoding='utf-8', errors='ignore') as file:
         content = file.read()
         content = f" {content} "
         content = content.replace("'", "")
     return content
+
 path = "temp.txt"
 content = removal(path) # update the current file
-with open(path, 'w') as file:
-    file.write(content) #open the updated file
-with open('temp.txt', 'r') as file:
-    file_contents = file.read()
+with open(path, 'w', encoding='utf-8') as file:
+    file.write(content)  # write the updated content back to the file
+
+with open(path, 'r', encoding='utf-8') as file:
+    file_contents = file.read()  # read the updated file
 
 data = file_contents #data has all the html code necessary
 soup = BeautifulSoup(data, 'html.parser')
@@ -77,7 +80,7 @@ df['Link'] = 'https://www.facebook.com/' + df['Link']
 new_order = ['Model', 'Year', 'Miles', 'Location' , 'Prices', 'Link', 'Scraped_On']
 df = df[new_order]
 dd = datetime.today().strftime('%Y-%m-%d')
-output_Text = dd + "" + locationa + ".csv"
+output_Text = dd + "-" + locationa + ".csv"
 df.to_csv(output_Text, index=False)
 
 print("DataFrame saved!")
