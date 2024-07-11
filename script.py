@@ -72,10 +72,11 @@ df = pd.DataFrame({
     'Link': links
 })
 df = df.dropna(subset=['Location'])
-df['Year'] = df['Model'].str.extract(r'(\d{4})')
 df['Model'] = df['Model'].astype(str)
+df['Year'] = df['Model'].str.extract(r'(\d{4})')
 df['Model'] = df['Model'].str[4:]
 df['Scraped_On'] = datetime.today().strftime('%Y-%m-%d')
+df['Link'] = df['Link'].astype(str)
 df['Link'] = 'https://www.facebook.com/' + df['Link']
 new_order = ['Model', 'Year', 'Miles', 'Location' , 'Prices', 'Link', 'Scraped_On']
 df = df[new_order]
