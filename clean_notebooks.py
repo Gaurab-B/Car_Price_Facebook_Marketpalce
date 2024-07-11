@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 df = pd.read_csv("Datasets/NewingtonCT7-10.csv")
-filtered_df = df[df['Model'].str.contains('Honda|Toyota', case=False)]
+filtered_df = df[df['Model'].str.contains('Honda|Toyota|Mazda', case=False)]
 def check_dealership(miles):
     if isinstance(miles, str) and "Dealership" in miles:
         return True
