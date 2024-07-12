@@ -6,19 +6,12 @@ Copy the html element 'div' with the class; "x1xfsgkm xqmdsaz x1cnzs8 x4v5mdz xj
 
 Paste that in the temp.txt file  .  
 
-Run the script.py python file  
+Run the script.py python file    .  
+
+Run the clean_notebooks.py to just select Honda, Toyota and Mazda Cars as they are the best cars for someone who is looking for  a first car.  
+
 
 CSV file will be saved as required.  
 
 
-
-
-
-(old)  
-
-Run the remove symbool.ipynb entirely, which will clean the '.  
-
-Run HTML_TO_CSV to get the csv output from the file.  
-
-Finally, rename the file as per your requirements and save it to datasets.  
 
