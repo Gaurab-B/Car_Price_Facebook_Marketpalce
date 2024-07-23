@@ -1,4 +1,4 @@
-<b>Version 1.1</b>
+<b>Version 1.2</b>
 
 First, Go to Facebook Marketplace and search for cars, (only made for USA for now.  
 
