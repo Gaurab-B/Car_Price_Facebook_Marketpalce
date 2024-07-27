@@ -12,7 +12,6 @@ Run the clean_notebooks.py to just select Honda, Toyota and Mazda Cars as they a
 
 
 CSV file will be saved as required
-CSV file will be saved as required.
 
 
 
