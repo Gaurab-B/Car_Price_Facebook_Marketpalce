@@ -11,7 +11,7 @@ Run the script.py python file.
 Run the clean_notebooks.py to just select Honda, Toyota and Mazda Cars as they are the best cars for someone who is looking for  a first car.  
 
 
-CSV file will be saved as required
+CSV file will be saved as required.
 
 
 
